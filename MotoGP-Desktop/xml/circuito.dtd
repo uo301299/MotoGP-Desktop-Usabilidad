@@ -1,0 +1,75 @@
+<!ELEMENT circuito (nombre, dimensiones, fecha, hora_inicio, vueltas, ubicacion, 
+            patrocinador, referencias, galeria_fotos, galeria_videos, geografia, 
+            tramos, resultados, clasificacion_mundial)>
+
+<!ELEMENT nombre (#PCDATA)>
+
+
+<!ELEMENT dimensiones (longitud, anchura)>
+<!ELEMENT longitud (#PCDATA)>
+<!ATTLIST longitud unidad CDATA #REQUIRED>
+<!ELEMENT anchura (#PCDATA)>
+<!ATTLIST anchura unidades (m) "m">
+
+
+<!ELEMENT fecha (#PCDATA)>
+<!ATTLIST fecha formato CDATA "YYYY-MM-DD">
+
+
+<!ELEMENT hora_inicio (#PCDATA)>
+<!ATTLIST hora_inicio zona CDATA "Europe/Madrid">
+
+<!ELEMENT vueltas (#PCDATA)>
+
+
+<!ELEMENT ubicacion (localidad, pais)>
+<!ELEMENT localidad (#PCDATA)>
+<!ELEMENT pais (#PCDATA)>
+
+<!ELEMENT patrocinador (#PCDATA)>
+
+
+<!ELEMENT referencias (referencia, referencia, referencia, referencia*)>
+<!ELEMENT referencia (#PCDATA)>
+<!ATTLIST referencia tipo (web|libro|articulo|video|otro) "web"
+                   url  CDATA #IMPLIED>
+
+
+<!ELEMENT galeria_fotos (foto, foto, foto)>
+<!ELEMENT foto (#PCDATA)>
+<!ATTLIST foto archivo CDATA #REQUIRED
+               titulo  CDATA #IMPLIED>
+
+
+<!ELEMENT galeria_videos (video, video)>
+<!ELEMENT video (#PCDATA)>
+<!ATTLIST video archivo CDATA #REQUIRED
+                 titulo  CDATA #IMPLIED>
+               
+
+<!ELEMENT geografia (origen)>
+<!ELEMENT origen (longitud, latitud, altitud)>
+<!ELEMENT latitud (#PCDATA)>
+<!ATTLIST latitud unidad CDATA #REQUIRED>
+<!ELEMENT altitud (#PCDATA)>
+<!ATTLIST altitud unidad CDATA #REQUIRED>
+
+
+<!ELEMENT tramos (tramo+)>
+<!ELEMENT tramo (distancia, puntoFinal, sector)>
+<!ELEMENT distancia (#PCDATA)>
+<!ATTLIST distancia unidad CDATA #REQUIRED>
+<!ELEMENT puntoFinal (longitud, latitud, altitud)>
+<!ELEMENT sector (#PCDATA)>
+
+
+<!ELEMENT resultados (vencedor)>
+<!ELEMENT vencedor EMPTY>
+<!ATTLIST vencedor nombre CDATA #REQUIRED
+                   tiempo CDATA #REQUIRED>
+
+
+<!ELEMENT clasificacion_mundial (piloto, piloto, piloto)>
+<!ELEMENT piloto (#PCDATA)>
+<!ATTLIST piloto pos    (1|2|3) #REQUIRED
+                 puntos CDATA   #IMPLIED>

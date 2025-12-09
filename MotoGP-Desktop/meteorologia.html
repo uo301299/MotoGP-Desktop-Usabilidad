@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+<head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8" />
+    <title>MotoGP-Meteorologia</title>
+	<meta name ="author" content="Iyan Alvarez Casasnovas"/>
+	<meta name="descrption" content="Informacion sobre la meteorologia del proyecto MotoGP-Desktop"/>
+	<meta name="keywords" content="moto, motoGP"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>	
+		
+	<link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
+	<link rel="stylesheet" type="text/css" href="estilo/layout.css" />
+
+	<link rel="icon" type="image/ico" href="multimedia/favicon.ico" />
+
+	<script src="js/ciudad.js"></script>
+</head>
+
+<body>
+    <!-- Datos con el contenidos que aparece en el navegador -->
+    <header>
+		<h1><a href="index.html">MotoGP-Desktop</a></h1>
+		<nav>
+			<a href="index.html" title="Inicio">Inicio</a>
+			<a href="piloto.html" title="Informacion del piloto">Piloto</a>
+			<a href="circuito.html" title="Informacion del circuito">Circuito</a>
+			<a href="meteorologia.html" class="active" title="Informacion del meteorologia">Meteorologia</a>
+			<a href="clasificaciones.html" title="Informacion del clasificaciones">Clasificaciones</a>
+			<a href="juegos.html" title="Informacion del juegos">Juegos</a>
+			<a href="ayuda.html" title="Informacion del ayuda">Ayuda</a>
+		</nav>
+	</header>
+	
+	<nav><p>
+		Estás en: <a href="index.html">Indice</a> >> <strong>Meteorologia</strong>
+	</p></nav>
+	
+	
+	
+	
+	<h2>Meteorologia de MotoGP-Desktop</h2>
+    <script>
+    	const ciudad = new Ciudad("Assen", "Paises Bajos", "Neerlandés");
+		ciudad.setPoblacion(66_215);
+		ciudad.setCoordenadas({latitud:6.5850, longitud:52.9705});
+		
+		const h2 = document.createElement("h2");
+        h2.textContent = "Ciudad del Circuito";
+        document.body.appendChild(h2);
+
+    	const p1 = document.createElement("p");
+        p1.textContent = "Ciudad: " + ciudad.getNombre();
+        document.body.appendChild(p1);
+
+		const p2 = document.createElement("p");
+        p2.textContent = "Pais: " + ciudad.getPais();
+        document.body.appendChild(p2);
+
+    	ciudad.getExtraInfo();
+    	ciudad.escribirCoordenadas();
+	</script>
+</body>
+</html>

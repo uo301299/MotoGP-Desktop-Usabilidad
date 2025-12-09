@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<u:circuito xmlns:u="http://www.uniovi.es"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:schemaLocation="http://www.uniovi.es circuito.xsd">
+
+  <u:nombre>TT Circuit Assen</u:nombre>
+
+  <u:dimensiones>
+    <u:longitud unidad="m">4555</u:longitud>
+    <u:anchura unidades="m">14</u:anchura>
+  </u:dimensiones>
+
+  <u:fecha formato="YYYY-MM-DD">2025-06-29</u:fecha>
+
+  <u:hora_inicio zona="Europe/Madrid">14:00</u:hora_inicio>
+
+  <u:vueltas>26</u:vueltas>
+
+  <u:ubicacion>
+    <u:localidad>Assen</u:localidad>
+    <u:pais>Países Bajos</u:pais>
+  </u:ubicacion>
+
+  <u:patrocinador>TABAC Fragances</u:patrocinador>
+
+  <u:referencias>
+    <u:referencia tipo="web" url="https://www.ttcircuit.com/en">Web oficial TT Circuit Assen</u:referencia>
+    <u:referencia tipo="web" url="https://es.wikipedia.org/wiki/Circuito_de_Assen">Wikipedia de TT Circuit Assen</u:referencia>
+    <u:referencia tipo="web" url="https://www.motogp.com/es">Web oficial de MotoGP</u:referencia>
+  </u:referencias>
+
+  <u:galeria_fotos>
+    <u:foto archivo="./multimedia/Panorama.jpg">Panorámica del circuito</u:foto>
+    <u:foto archivo="./multimedia/RectaMeta.jpg">Recta de meta</u:foto>
+    <u:foto archivo="./multimedia/EsquemaRecorrido.jpg">Esquema del TT Circuit Assen</u:foto>
+  </u:galeria_fotos>
+
+  <u:galeria_videos>
+    <u:video archivo="./multimedia/GoProVuelta.mp4">GoPro  vuelta al Circuito Assen</u:video>
+    <u:video archivo="./multimedia/PedrosaAnalizaAssen.mp4">Analisis del circuito por Pedrosa</u:video>
+  </u:galeria_videos>
+
+  <u:geografia>
+    <u:origen>
+      <u:longitud unidad="deg">6.5240992</u:longitud>
+      <u:latitud unidad="deg">52.9623206</u:latitud>
+      <u:altitud unidad="m">11.9768761</u:altitud>
+    </u:origen>
+  </u:geografia>
+
+  <u:tramos>
+    <u:tramo>
+      <u:distancia unidad="m">391.95</u:distancia>
+      <u:puntoFinal>
+        <u:longitud unidad="deg">6.5286640</u:longitud>
+        <u:latitud unidad="deg">52.9645534</u:latitud>
+        <u:altitud unidad="m">11.9769228</u:altitud>
+      </u:puntoFinal>
+      <u:sector>1</u:sector>
+    </u:tramo>
+
+    <u:tramo>
+      <u:distancia unidad="m">50.32</u:distancia>
+      <u:puntoFinal>
+        <u:longitud unidad="deg">6.5293506</u:longitud>
+        <u:latitud unidad="deg">52.9645932</u:latitud>
+        <u:altitud unidad="m">11.9769238</u:altitud>
+      </u:puntoFinal>
+      <u:sector>1</u:sector>
+    </u:tramo>
+
+    <u:tramo>
+      <u:distancia unidad="m">129.8</u:distancia>
+      <u:puntoFinal>
+        <u:longitud unidad="deg">6.5308586</u:longitud>
+        <u:latitud unidad="deg">52.9638535</u:latitud>
+        <u:altitud unidad="m">10.7715270</u:altitud>
+      </u:puntoFinal>
+      <u:sector>1</u:sector>
+    </u:tramo>
+
+    <u:tramo>
+      <u:distancia unidad="m">23.18</u:distancia>
+      <u:puntoFinal>
+        <u:longitud unidad="deg">6.5309934</u:longitud>
+        <u:latitud unidad="deg">52.9636577</u:latitud>
+        <u:altitud unidad="m">10.5190337</u:altitud>
+      </u:puntoFinal>
+      <u:sector>1</u:sector>
+    </u:tramo>
+
+    <u:tramo>
+      <u:distancia unidad="m">138.77</u:distancia>
+      <u:puntoFinal>
+        <u:longitud unidad="deg">6.5312317</u:longitud>
+        <u:latitud unidad="deg">52.9623960</u:latitud>
+        <u:altitud unidad="m">10.2947784</u:altitud>
+      </u:puntoFinal>
+      <u:sector>1</u:sector>
+    </u:tramo>
+
+    <u:tramo>
+      <u:distancia unidad="m">99.12</u:distancia>
+      <u:puntoFinal>
+        <u:longitud unidad="deg">6.5302558</u:longitud>
+        <u:latitud unidad="deg">52.9619153</u:latitud>
+        <u:altitud unidad="m">11.1429403</u:altitud>
+      </u:puntoFinal>
+      <u:sector>1</u:sector>
+    </u:tramo>
+
+    <u:tramo>
+      <u:distancia unidad="m">116.31</u:distancia>
+      <u:puntoFinal>
+        <u:longitud unidad="deg">6.5293496</u:longitud>
+        <u:latitud unidad="deg">52.9626228</u:latitud>
+        <u:altitud unidad="m">10.2945296</u:altitud>
+      </u:puntoFinal>
+      <u:sector>1</u:sector>
+    </u:tramo>
+
+    <u:tramo>
+      <u:distancia unidad="m">53.27</u:distancia>
+      <u:puntoFinal>
+        <u:longitud unidad="deg">6.5298311</u:longitud>
+        <u:latitud unidad="deg">52.9631322</u:latitud>
+        <u:altitud unidad="m">10.2947392</u:altitud>
+      </u:puntoFinal>
+      <u:sector>1</u:sector>
+    </u:tramo>
+
+    <u:tramo>
+      <u:distancia unidad="m">70.43</u:distancia>
+      <u:puntoFinal>
+        <u:longitud unidad="deg">6.5292491</u:longitud>
+        <u:latitud unidad="deg">52.9634862</u:latitud>
+        <u:altitud unidad="m">10.5437092</u:altitud>
+      </u:puntoFinal>
+      <u:sector>1</u:sector>
+    </u:tramo>
+
+    <u:tramo>
+      <u:distancia unidad="m">752.19</u:distancia>
+      <u:puntoFinal>
+        <u:longitud unidad="deg">6.5232596</u:longitud>
+        <u:latitud unidad="deg">52.9577847</u:latitud>
+        <u:altitud unidad="m">11.0388853</u:altitud>
+      </u:puntoFinal>
+      <u:sector>1</u:sector>
+    </u:tramo>
+
+
+    
+    <u:tramo>
+      <u:distancia unidad="m">73.73</u:distancia>
+      <u:puntoFinal>
+        <u:longitud unidad="deg">6.5222185</u:longitud>
+        <u:latitud unidad="deg">52.9576371</u:latitud>
+        <u:altitud unidad="m">11.7832754</u:altitud>
+      </u:puntoFinal>
+      <u:sector>1</u:sector>
+    </u:tramo>
+
+    <u:tramo>
+      <u:distancia unidad="m">116.48</u:distancia>
+      <u:puntoFinal>
+        <u:longitud unidad="deg">6.5210422</u:longitud>
+        <u:latitud unidad="deg">52.9568915</u:latitud>
+        <u:altitud unidad="m">11.0388376</u:altitud>
+      </u:puntoFinal>
+      <u:sector>1</u:sector>
+    </u:tramo>
+
+    <u:tramo>
+      <u:distancia unidad="m">189.9</u:distancia>
+      <u:puntoFinal>
+        <u:longitud unidad="deg">6.5208849</u:longitud>
+        <u:latitud unidad="deg">52.9551746</u:latitud>
+        <u:altitud unidad="m">10.7730221</u:altitud>
+      </u:puntoFinal>
+      <u:sector>2</u:sector>
+    </u:tramo>
+
+    <u:tramo>
+      <u:distancia unidad="m">93.3</u:distancia>
+      <u:puntoFinal>
+        <u:longitud unidad="deg">6.5197539</u:longitud>
+        <u:latitud unidad="deg">52.9547307</u:latitud>
+        <u:altitud unidad="m">11.7832130</u:altitud>
+      </u:puntoFinal>
+      <u:sector>2</u:sector>
+    </u:tramo>
+
+    <u:tramo>
+      <u:distancia unidad="m">381.89</u:distancia>
+      <u:puntoFinal>
+        <u:longitud unidad="deg">6.5145228</u:longitud>
+        <u:latitud unidad="deg">52.9546967</u:latitud>
+        <u:altitud unidad="m">11.2931054</u:altitud>
+      </u:puntoFinal>
+      <u:sector>2</u:sector>
+    </u:tramo>
+
+    <u:tramo>
+      <u:distancia unidad="m">67.48</u:distancia>
+      <u:puntoFinal>
+        <u:longitud unidad="deg">6.5137464</u:longitud>
+        <u:latitud unidad="deg">52.9543636</u:latitud>
+        <u:altitud unidad="m">11.6052104</u:altitud>
+      </u:puntoFinal>
+      <u:sector>2</u:sector>
+    </u:tramo>
+
+    <u:tramo>
+      <u:distancia unidad="m">140.09</u:distancia>
+      <u:puntoFinal>
+        <u:longitud unidad="deg">6.5133329</u:longitud>
+        <u:latitud unidad="deg">52.9530914</u:latitud>
+        <u:altitud unidad="m">12.1553260</u:altitud>
+      </u:puntoFinal>
+      <u:sector>2</u:sector>
+    </u:tramo>
+
+    <u:tramo>
+      <u:distancia unidad="m">142.25</u:distancia>
+      <u:puntoFinal>
+        <u:longitud unidad="deg">6.5117930</u:longitud>
+        <u:latitud unidad="deg">52.9530290</u:latitud>
+        <u:altitud unidad="m">12.5883415</u:altitud>
+      </u:puntoFinal>
+      <u:sector>2</u:sector>
+    </u:tramo>
+
+    <u:tramo>
+      <u:distancia unidad="m">154.65</u:distancia>
+      <u:puntoFinal>
+        <u:longitud unidad="deg">6.5113293</u:longitud>
+        <u:latitud unidad="deg">52.9542656</u:latitud>
+        <u:altitud unidad="m">12.4618869</u:altitud>
+      </u:puntoFinal>
+      <u:sector>2</u:sector>
+    </u:tramo>
+
+    <u:tramo>
+      <u:distancia unidad="m">176.27</u:distancia>
+      <u:puntoFinal>
+        <u:longitud unidad="deg">6.5127869</u:longitud>
+        <u:latitud unidad="deg">52.9556032</u:latitud>
+        <u:altitud unidad="m">11.7831684</u:altitud>
+      </u:puntoFinal>
+      <u:sector>2</u:sector>
+    </u:tramo>
+
+    <u:tramo>
+      <u:distancia unidad="m">71.89</u:distancia>
+      <u:puntoFinal>
+        <u:longitud unidad="deg">6.5135661</u:longitud>
+        <u:latitud unidad="deg">52.9560541</u:latitud>
+        <u:altitud unidad="m">11.7832751</u:altitud>
+      </u:puntoFinal>
+      <u:sector>3</u:sector>
+    </u:tramo>
+
+    <u:tramo>
+      <u:distancia unidad="m">242.13</u:distancia>
+      <u:puntoFinal>
+        <u:longitud unidad="deg">6.5168433</u:longitud>
+        <u:latitud unidad="deg">52.9569736</u:latitud>
+        <u:altitud unidad="m">11.4335562</u:altitud>
+      </u:puntoFinal>
+      <u:sector>3</u:sector>
+    </u:tramo>
+
+    <u:tramo>
+      <u:distancia unidad="m">72.77</u:distancia>
+      <u:puntoFinal>
+        <u:longitud unidad="deg">6.5178955</u:longitud>
+        <u:latitud unidad="deg">52.9571151</u:latitud>
+        <u:altitud unidad="m">11.3793142</u:altitud>
+      </u:puntoFinal>
+      <u:sector>3</u:sector>
+    </u:tramo>
+
+    <u:tramo>
+      <u:distancia unidad="m">91.84</u:distancia>
+      <u:puntoFinal>
+        <u:longitud unidad="deg">6.5192118</u:longitud>
+        <u:latitud unidad="deg">52.9573192</u:latitud>
+        <u:altitud unidad="m">11.4331006</u:altitud>
+      </u:puntoFinal>
+      <u:sector>3</u:sector>
+    </u:tramo>
+
+    <u:tramo>
+      <u:distancia unidad="m">77.18</u:distancia>
+      <u:puntoFinal>
+        <u:longitud unidad="deg">6.5202202</u:longitud>
+        <u:latitud unidad="deg">52.9576628</u:latitud>
+        <u:altitud unidad="m">11.4336622</u:altitud>
+      </u:puntoFinal>
+      <u:sector>3</u:sector>
+    </u:tramo>
+
+    <u:tramo>
+      <u:distancia unidad="m">136.57</u:distancia>
+      <u:puntoFinal>
+        <u:longitud unidad="deg">6.5212345</u:longitud>
+        <u:latitud unidad="deg">52.9586697</u:latitud>
+        <u:altitud unidad="m">11.4333606</u:altitud>
+      </u:puntoFinal>
+      <u:sector>3</u:sector>
+    </u:tramo>
+
+    <u:tramo>
+      <u:distancia unidad="m">210.2</u:distancia>
+      <u:puntoFinal>
+        <u:longitud unidad="deg">6.5213773</u:longitud>
+        <u:latitud unidad="deg">52.9605739</u:latitud>
+        <u:altitud unidad="m">11.4283005</u:altitud>
+      </u:puntoFinal>
+      <u:sector>3</u:sector>
+    </u:tramo>
+
+    <u:tramo>
+      <u:distancia unidad="m">56.41</u:distancia>
+      <u:puntoFinal>
+        <u:longitud unidad="deg">6.5218351</u:longitud>
+        <u:latitud unidad="deg">52.9609080</u:latitud>
+        <u:altitud unidad="m">11.4283005</u:altitud>
+      </u:puntoFinal>
+      <u:sector>3</u:sector>
+    </u:tramo>
+
+    <u:tramo>
+      <u:distancia unidad="m">66.83</u:distancia>
+      <u:puntoFinal>
+        <u:longitud unidad="deg">6.5224268</u:longitud>
+        <u:latitud unidad="deg">52.9613433</u:latitud>
+        <u:altitud unidad="m">12.4489235</u:altitud>
+      </u:puntoFinal>
+      <u:sector>3</u:sector>
+    </u:tramo>
+
+    <u:tramo>
+      <u:distancia unidad="m">155.74</u:distancia>
+      <u:puntoFinal>
+        <u:longitud unidad="deg">6.5241406</u:longitud>
+        <u:latitud unidad="deg">52.9623017</u:latitud>
+        <u:altitud unidad="m">12.1781663</u:altitud>
+      </u:puntoFinal>
+      <u:sector>3</u:sector>
+    </u:tramo>
+  </u:tramos>
+
+  <u:resultados>
+    <u:vencedor nombre="Marc Márquez" tiempo="00:40:14.072"/>
+  </u:resultados>
+
+  <u:clasificacion_mundial>
+    <u:piloto pos="1" puntos="307">Marc Márquez</u:piloto>
+    <u:piloto pos="2" puntos="239">Alex Márquez</u:piloto>
+    <u:piloto pos="3" puntos="181">Pecco Bagnaia</u:piloto>
+  </u:clasificacion_mundial>
+
+</u:circuito>
