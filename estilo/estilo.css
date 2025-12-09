@@ -1,0 +1,53 @@
+/*Iyan Alvarez Casasnovas - UO301299*/
+/* Estilos generales del proyecto MotoGP-Desktop*/
+
+/*
+COLORES:
+
+Baby Blue
+#68bbe3
+
+Blue Grotto
+#0e86d4
+
+Blue
+#055c9d
+
+Navy Blue
+#003060
+*/
+
+/*Especificidad: 001*/
+body{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #003060;    
+  background-color:#68bbe3;
+}
+
+header{
+    background-color: #68bbe3;
+}
+
+header nav{
+    text-decoration-line: none;
+    background-color: #0e86d4;
+}
+
+h1{
+    color: #0e86d4;
+}
+
+nav{
+    color: #68bbe3;
+}
+
+.active{
+    background-color: #055c9d
+}
+
+nav p strong{
+    color: #003060
+}
+nav p{
+    color: #003060; 
+}

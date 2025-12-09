@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<xs:schema
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:u="http://www.uniovi.es"
+    targetNamespace="http://www.uniovi.es"
+    elementFormDefault="qualified">
+
+    <xs:element name="circuito">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="u:nombre"/>
+                <xs:element ref="u:dimensiones"/>
+                <xs:element ref="u:fecha"/>
+                <xs:element ref="u:hora_inicio"/>
+                <xs:element ref="u:vueltas"/>
+                <xs:element ref="u:ubicacion"/>
+                <xs:element ref="u:patrocinador"/>
+                <xs:element ref="u:referencias"/>
+                <xs:element ref="u:galeria_fotos"/>
+                <xs:element ref="u:galeria_videos"/>
+                <xs:element ref="u:geografia"/>
+                <xs:element ref="u:tramos"/>
+                <xs:element ref="u:resultados"/>
+                <xs:element ref="u:clasificacion_mundial"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="nombre" type="xs:string"/>
+
+    <xs:element name="dimensiones">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="u:longitud"/>
+                <xs:element ref="u:anchura"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="longitud">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:decimal">
+                    <xs:attribute name="unidad" type="xs:string" use="required"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="anchura">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:decimal">
+                    <xs:attribute default="m" name="unidades">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:NMTOKEN">
+                                <xs:enumeration value="m"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:attribute>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="fecha">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:string">
+                    <xs:attribute default="YYYY-MM-DD" name="formato" type="xs:string"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="hora_inicio">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:string">
+                    <xs:attribute default="Europe/Madrid" name="zona" type="xs:string"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="vueltas" type="xs:string"/>
+
+    <xs:element name="ubicacion">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="u:localidad"/>
+                <xs:element ref="u:pais"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="localidad" type="xs:string"/>
+    <xs:element name="pais" type="xs:string"/>
+    <xs:element name="patrocinador" type="xs:string"/>
+
+    <xs:element name="referencias">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="u:referencia"/>
+                <xs:element ref="u:referencia"/>
+                <xs:element ref="u:referencia"/>
+                <xs:element minOccurs="0" maxOccurs="unbounded" ref="u:referencia"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="referencia">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:string">
+                    <xs:attribute default="web" name="tipo">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:NMTOKEN">
+                                <xs:enumeration value="web"/>
+                                <xs:enumeration value="libro"/>
+                                <xs:enumeration value="articulo"/>
+                                <xs:enumeration value="video"/>
+                                <xs:enumeration value="otro"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:attribute>
+                    <xs:attribute name="url" type="xs:string"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="galeria_fotos">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="u:foto"/>
+                <xs:element ref="u:foto"/>
+                <xs:element ref="u:foto"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="foto">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:string">
+                    <xs:attribute name="archivo" type="xs:string" use="required"/>
+                    <xs:attribute name="titulo" type="xs:string"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="galeria_videos">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="u:video"/>
+                <xs:element ref="u:video"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="video">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:string">
+                    <xs:attribute name="archivo" type="xs:string" use="required"/>
+                    <xs:attribute name="titulo" type="xs:string"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="geografia">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="u:origen"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="origen">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="u:longitud"/>
+                <xs:element ref="u:latitud"/>
+                <xs:element ref="u:altitud"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="latitud">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:string">
+                    <xs:attribute name="unidad" type="xs:string" use="required"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="altitud">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:string">
+                    <xs:attribute name="unidad" type="xs:string" use="required"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="tramos">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element minOccurs="1" maxOccurs="unbounded" ref="u:tramo"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="tramo">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="u:distancia"/>
+                <xs:element ref="u:puntoFinal"/>
+                <xs:element ref="u:sector"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="distancia">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:string">
+                    <xs:attribute name="unidad" type="xs:string" use="required"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="puntoFinal">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="u:longitud"/>
+                <xs:element ref="u:latitud"/>
+                <xs:element ref="u:altitud"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="sector" type="xs:string"/>
+
+    <xs:element name="resultados">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="u:vencedor"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="vencedor">
+        <xs:complexType>
+            <xs:attribute name="nombre" type="xs:string" use="required"/>
+            <xs:attribute name="tiempo" type="xs:string" use="required"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="clasificacion_mundial">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="u:piloto"/>
+                <xs:element ref="u:piloto"/>
+                <xs:element ref="u:piloto"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="piloto">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:string">
+                    <xs:attribute name="pos" use="required">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:NMTOKEN">
+                                <xs:enumeration value="1"/>
+                                <xs:enumeration value="2"/>
+                                <xs:enumeration value="3"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:attribute>
+                    <xs:attribute name="puntos" type="xs:string"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>
